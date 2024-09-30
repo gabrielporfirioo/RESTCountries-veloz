@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script type="text/javascript" src="./api.js"></script>
+</head>
+
+
+
+
+<body>
+
+    <header>
+        <h1>Where in the world ?</h1>
+    </header>
+
+    
+        <div class="container">
+            <div class="search-container">
+                
+                
+                
+                
+                
+                <input type="text" class="search-box" id="search" placeholder="Pesquisar país...">
+                
+                
+                
+                  <select id="regionFilter">
+                    <option value="">Regiões</option>
+                    <option value="Africa">África</option>
+                    <option value="Americas">Américas</option>
+                    <option value="Asia">Ásia</option>
+                    <option value="Europe">Europa</option>
+                    <option value="Oceania">Oceania</option>
+                </select>
+
+
+                <select name="subregion" id="subregion" selected="all">
+                    <option value="">Subregiões</option>
+                    <option value="North America">América do Norte</option>
+                    <option value="Caribbean">Caribe</option>
+                    <option value="Central America">América Central</option>
+                    <option value="South America">América do Sul</option>
+                    <option value="Western Europe">Europa Ocidental</option>
+                    <option value="Eastern Europe">Europa Oriental</option>
+                    <option value="Northern Europe">Europa do Norte</option>
+                    <option value="Southern Europe">Europa do Sul</option>
+                    <option value="Southeast Asia">Sudeste Asiático</option>
+                    <option value="Southern Asia">Sul da Ásia</option>
+                    <option value="Central Asia">Ásia Central</option>
+                    <option value="Western Asia">Oeste da Ásia</option>
+                    <option value="Eastern Asia">Nordeste da Ásia</option>
+                    <option value="Northern Africa">Norte da África</option>
+                    <option value="Eastern Africa">Leste da África</option>
+                    <option value="Central Africa">África Central</option>
+                    <option value="Western Africa">África Ocidental</option>
+                    <option value="Southern Africa">África Austral</option>
+                    <option value="Oceania">Oceania</option>
+                    <option value="Australia and New Zealand">Austrália e Nova Zelândia</option>
+                    <option value="Melanesia">Melanésia</option>
+                    <option value="Micronesia">Micronésia</option>
+                    <option value="Polynesia">Polinésia</option>
+                </select>
+
+
+                <select id="populationFilter">
+                    <option value="">População</option>
+                    <option value="0">Menos de 1M </option>
+                    <option value="1000000-10000000">1M-10M</option>
+                    <option value="10000000-100000000">10M-100M</option>
+                    <option value="+100000000">Mais de 100M</option>
+                    
+                </select>
+            </div>
+            
+            <!-- <div id="sortButtons">
+                    <button data-sort="name">Ordenar por Nome</button>
+                    <button data-sort="population">Ordenar por População</button>
+                    <button data-sort="area">Ordenar por Área</button>
+                  </div> -->
+            
+            <div class="countries-container" id="countries" onclick="visitCountry()" >
+                <!-- As bandeiras e informações dos países serão adicionadas aqui dinamicamente -->
+           
+            </div>
+        
+            
+
+            <div id="pagination"></div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </div>
+
+       
+
+       
+</body>
+</html>

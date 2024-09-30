@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/countryStyle.css">
+</head>
+<body>
+    <div id="div">
+        <h1 id="countryName"></h1>
+        <img id="countryFlag" alt="Country flag">
+        <p>Capital: <span id="capital"></span></p>
+        <p>População: <span id="population"></span></p>
+        <p>Região: <span id="region"></span></p>
+        <p>Sub-Região: <span id="subregion"></span></p>
+        <p>Área: <span id="area"></span></p>
+        <p>Idioma: <span id="language"></span></p>
+        <p>Moeda: <span id="currency"></span></p>
+        <p>Fuso-Horário: <span id="timezones"></span></p>
+        <p>Dominio de Internet: <span id="topLevelDomain"></span></p>
+        <p>Código de discagem: <span id="callingCode"></span></p>
+        <a href="/">Voltar</a>
+    </div>
+    <script>
+         async function fetchCountryDetails() {
+            const countryName = window.location.pathname.split('/').pop();
+            const response = await fetch(`/api/country/${countryName}`);
+            const country = await response.json();
+            console.log(country);
+            
+            document.title = country.name.common;
+            document.getElementById('countryName').textContent = country.name.common;
+            document.getElementById('countryFlag').src = country.flags.png;
+            document.getElementById('capital').textContent = country.capital;
+            document.getElementById('population').textContent = country.population;
+            document.getElementById('region').textContent = country.region;
+            document.getElementById('subregion').textContent = country.subregion;
+            document.getElementById('area').textContent = country.area;
+            document.getElementById('language').textContent =  Object.values(country.languages).join(', ');
+            document.getElementById('currency').textContent = Object.values(country.currencies).map(c => [c.name, c.symbol]).join();
+            document.getElementById('timezones').textContent = country.timezones;
+            document.getElementById('topLevelDomain').textContent = country.tld;
+            document.getElementById('callingCode').textContent = Object.values(country.idd).join('');
+
+
+
+
+        }
+
+        fetchCountryDetails();
+
+    </script>
+</body>
+</html>

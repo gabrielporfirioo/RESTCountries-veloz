@@ -1,0 +1,165 @@
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: rgb(90, 182, 151);
+
+    h1{
+        margin-left: 30px;
+        color: azure;
+    }
+}
+
+
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: aquamarine;
+    color: white;
+    
+    
+}
+.search-container {
+    width: 80%;
+    max-width: 800px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    flex-direction: row;
+}
+.search-box {
+    width: 100%;
+    padding: 20px;
+    font-size: 24px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+#regionFilter {
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: #b3b3b3;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#regionFilter:hover {
+    background-color: #d0d0d0;
+}
+
+
+
+
+
+#populationFilter {
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: #b3b3b3;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#populationFilter:hover {
+    background-color: #d0d0d0;
+}
+
+
+
+
+
+
+.countries-container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 40px;
+    
+
+}
+
+
+
+
+
+
+.country{
+    background-color: cadetblue;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.country:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.2s ;
+    box-shadow: 0px 0px 15px 0px #000000a9;
+    background-color: rgb(79, 130, 132);
+    transform: translateY(-5px);
+}
+
+
+
+
+
+
+
+h3{
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+p{
+    color: black;
+    font-size: large;
+}
+
+
+
+#pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+#pagination button {
+    margin: 0 5px;
+}
+
+
+
+
+
+/* #sortButtons button.active {
+    background-color: #007bff;
+    color: white;
+} */
+
+#subregion{
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: #b3b3b3;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#subregion:hover{
+    background-color: #d0d0d0;
+}
+    
