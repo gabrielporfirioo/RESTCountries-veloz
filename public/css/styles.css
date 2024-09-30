@@ -33,6 +33,7 @@ body, html {
     margin-bottom: 40px;
     margin-top: 20px;
     flex-direction: row;
+    text-align: center;
 }
 .search-box {
     width: 100%;
@@ -61,26 +62,6 @@ body, html {
 #regionFilter:hover {
     background-color: #d0d0d0;
 }
-
-
-
-
-
-#populationFilter {
-    padding: 15px 25px;
-    font-size: 18px;
-    background-color: #b3b3b3;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-#populationFilter:hover {
-    background-color: #d0d0d0;
-}
-
-
-
 
 
 
@@ -144,14 +125,8 @@ p{
 
 
 
-
-/* #sortButtons button.active {
-    background-color: #007bff;
-    color: white;
-} */
-
 #subregion{
-    padding: 15px 25px;
+    padding: 15px ;
     font-size: 18px;
     background-color: #b3b3b3;
     border: none;

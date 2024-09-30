@@ -12,7 +12,7 @@
      const paginationContainer = document.getElementById('pagination');
      const subregion = document.getElementById('subregion');
 
-     //const populationFilter = document.getElementById('populationFilter');
+     
     
     
     
@@ -32,7 +32,7 @@
      searchInput.addEventListener('input', updateDisplay);
      regionFilter.addEventListener('change', updateDisplay);
      subregion.addEventListener('change', updateDisplay);
-     //populationFilter.addEventListener('change', updateDisplay);
+     
 
 
 
@@ -66,13 +66,13 @@
          const searchTerm = searchInput.value.toLowerCase();
          const selectedRegion = regionFilter.value;
          const selectedsubregion = subregion.value;
-         //const selectedPopulation = populationFilter.value;
+         
 
          const filteredCountries = allCountries.filter(country => {
              const matchesSearch = country.name.common.toLowerCase().includes(searchTerm);
              const matchesRegion = selectedRegion === '' || country.region === selectedRegion;
              const matchessubregion = selectedsubregion === '' || country.subregion === selectedsubregion;
-             //const matchesPopulation = selectedPopulation === '' || country.population === selectedPopulation;
+             
              
              return matchesSearch && matchesRegion && matchessubregion;
 
@@ -128,10 +128,6 @@
         
 
      }
- 
- 
-     
- 
  
  
 });     
