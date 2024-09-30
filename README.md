@@ -32,7 +32,7 @@ Antes de começar, certifique-se de ter instalado em sua máquina:
 
 2. Entre no diretório do projeto:
    ```
-   cd veloz
+   cd [diretório]
    ```
 
 3. Instale as dependências:
