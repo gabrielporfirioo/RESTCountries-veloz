@@ -57,19 +57,22 @@ A aplicação estará disponível em `http://localhost:3000`
 ## Estrutura do Projeto
 
 ```
-[nome-do-projeto]/
-│
-├── node_modules/
-├── src/
-│   ├── routes/
-│   │   └── [arquivos de rotas]
-│   ├── controllers/
-│   │   └── [arquivos de controladores]
-│   ├── models/
-│   │   └── [arquivos de modelos]
-│   └── app.js
-├── .env
-├── .gitignore
+veloz/
+├── js/
+│   └── api.js
+|
+├── node_modules
+|
+├── public/
+│   ├── css/
+│   │   └── countryStyle.css
+|   |      └── styles.css
+│   ├── template/
+│   │   └── contry.html
+|
+├── app.js
+├── index.html
+├── package-lock.json
 ├── package.json
 └── README.md
 ```
