@@ -1,47 +1,75 @@
-body{
-    align-items: center;
+body {
     background-color: aquamarine;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-#div{
+#div {
     background-color: azure;
     padding: 15px;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 40px;
+    max-width: 600px; 
+    width: 100%; 
+    margin: 20px auto; 
     border-radius: 5px;
     box-shadow: 0px 0px 15px 0px #00000074;
-        
-        h1{
-            text-align: center;
-            
-        }
-
-        img{
-           margin-left: 30%;
-        }
-        
-        
-        p{
-            margin-left: 30%;
-            font-size: larger;
-            font-weight: bolder;
-        }
-
-        span{
-            color: darkcyan;
-            
-            font: 1em sans-serif;
-            font-size: medium;
-        }
-
 }
 
-a{
+h1 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    max-width: 100%; 
+    height: auto; 
+    margin: 0 auto; 
+}
+
+p {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+span {
+    color: darkcyan;
+    font: 1em sans-serif;
+    font-size: medium;
+    
+}
+
+a {
+    display: inline-block;
     text-decoration: none;
     background-color: cornflowerblue;
     padding: 10px;
     border-radius: 10px;
     color: azure;
-    margin-left: 80%;
+    margin-top: 20px; 
+}
+
+
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; 
+    }
+    
+    #div {
+        margin: 10px auto; 
+    }
+    
+    p, span {
+        font-size: 16px; 
+    }
+    
+    a {
+        display: block;
+        text-align: center;
+        margin-left: 0; 
+    }
 }
